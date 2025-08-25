@@ -75,6 +75,13 @@ class HomePage extends StatelessWidget {
               },
               child: Text("Go to Back Page"),
           ),
+          SizedBox(height: 20,),
+          ElevatedButton(
+              onPressed: (){
+                GoRouter.of(context).pushNamed(RouteNamesClass.products);
+              },
+              child: Text("Go to Products Page"),
+          ),
         ],
       ),
     );
